@@ -37,7 +37,7 @@ module.exports = {
 				console.log({ title, description });
 				const thread =  interaction.channel.threads.create({
 					name: `${title}`,
-					autoArchiveDuration: 60,
+					autoArchiveDuration: 10080,
 					reason: `${description}`,
 				});
 				console.log(`Created thread: ${title}`);
