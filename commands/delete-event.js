@@ -18,14 +18,14 @@ module.exports = {
 				interaction.reply(`Thread "${threadName}" deleted successfully`);
 				console.log(`User ${interaction.user.tag} deleted thread: ${threadName}`);
 			}
-			catch (err) {
-				interaction.reply(`Thread "${threadName}" was not found.`);
+			catch {
+				interaction.reply(`ERROR: Thread "${threadName}" could not be deleted because it was not found.`);
 				console.log(`FATAL: Error deleting thread: ${threadName} not found.`);
 				//console.log(err);
 			}
 		}
 		else {
-			await interaction.reply("Error: you do not have permission to use this command!");	
+			await interaction.reply("Error: you do not have permission to use this command!");
 		}
 	},
 };

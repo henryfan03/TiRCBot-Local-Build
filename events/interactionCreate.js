@@ -40,7 +40,8 @@ module.exports = {
 					autoArchiveDuration: 10080,
 					reason: `${description}`,
 				});
-				console.log(`Created thread: ${title}`);
+				interaction.reply(`Thread: "${title}" created successfully! Join by opening the thread menu or active threads in #${interaction.channel.name} and sending a message!`);
+				console.log(`Created thread: "${title}" with description "${description}"`);
 				return;
 	    }
 		}

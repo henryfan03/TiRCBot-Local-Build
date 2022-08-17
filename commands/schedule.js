@@ -27,6 +27,7 @@ module.exports = {
 			modal.addComponents(firstActionRow, secondActionRow);
 
 			await interaction.showModal(modal);
+			
         }
         else {
             await interaction.reply("Error: you do not have permission to use this command!");
